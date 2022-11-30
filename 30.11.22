@@ -1,0 +1,96 @@
+shampoo =125
+soaps=350
+paste=100
+powder=150
+chocolates=300
+cphno=input('enter customer phone number:')
+cname=input('enter customer name')
+cadd=input('enter customer address:')
+shampoo=int(input('shampoo cost'))
+soaps=int(input('soaps cost'))
+paste=int(input('paste cost'))
+powder=int(input('powder cost'))
+chocolates=int(input('chocolates cost'))
+bill=shampoo+soaps+paste+powder+chocolates
+if bill>3000:
+   tax=bill*5/100
+elif bill>2000:
+   tax=bill*7/100
+elif bill>1000:
+   tax=bill*10/100
+elif bill>500:
+   tax=bill*15/100
+else:
+ tax-100
+ tax=tax+bill
+print('customer phono',cphno)
+print('customer name',cname)
+print('tax',tax)
+print('bill',bill)
+
+ouput:enter customer phone number:336
+enter customer namerani
+enter customer address:hyd
+shampoo cost125
+soaps cost350
+paste cost100
+powder cost150
+chocolates cost300
+customer phono 336
+customer name rani
+tax 102.5
+bill 1025
+
+
+
+
+sugar=250
+teapowder=200
+salt=100
+oil=150
+cno=input('enter customer number')
+cnmae=input('enter customer name')
+cadd=input('enter customer address')
+su=int(input('enter suger quantity'))
+te=int(input('enter tea quantity'))
+sa=int(input('enter salt quantity'))
+oil=int(input('enter oil quantity'))
+bill=(su*sugar)+(tea*teapowder)+(sa*salt)+(oi*oil)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+totalbill=tax+bill
+if coupon=='diwali':
+    if toatalbill>=5000:
+        dis=totalbill*10/100
+    if totalbill>=3000:
+        dis=total*6/100
+    if totalbill>=1000:
+        dis=toatal*4/100
+else:
+    dis=100
+if coupon=='christmas':
+    if totalbill>+3000:
+        dis=totalbill*20/100
+    if totalbill>=2000:
+        dis=totalbill*10/100
+    if totalbill>=1000:
+        dis=totalbill*5/100
+else:
+    dis=100
+afterdis=totalbill-dis
+print('enter customer no',cno)
+print('enter customer name',cname)
+print('enter address',cadd)
+print('bill',bill)
+print('tax',tax)
+print('discount',dis)
+print('total bill',totalbill)
+print('total bill after discount',afterdis)
